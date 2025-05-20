@@ -24,7 +24,7 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Reza Esfahani"
-  pronouns         : # example: "she/her"  
+  pronouns         : "he/him" #"she/her", "they/them"
   bio              : "Postdoctoral researcher in geophysics & artificial intelligence"
   location         : "Grenoble, France"
   employer         : "University of Grenoble Alpes"
