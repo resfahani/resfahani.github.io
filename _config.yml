@@ -34,18 +34,19 @@ author:
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?user=UXNmdGsAAAAJ&hl=en"
-  impactstory      : # URL
   orcid            : "https://orcid.org/my-orcid?orcid=0000-0003-3373-9859"
-  semantic         : # URL
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : "https://www.researchgate.net/profile/Reza-D-D-Esfahani?ev=hdr_xprf"
+  github           : "resfahani"
+
   scopus           : # URL
+  semantic         : # URL
+  impactstory      : # URL
 
   # Repositories and software development
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "https://www.github.com/resfahani/"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
