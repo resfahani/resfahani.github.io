@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Reza Esfahani \n Postdoctoral researcher in Geophysics and Artificial Intelligence "
+title: "Reza Esfahani"
 author_profile: true
 redirect_from: 
   - /about/
