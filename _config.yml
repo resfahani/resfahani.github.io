@@ -26,17 +26,20 @@ author:
   name             : "Reza Esfahani"
   pronouns         : "he/him" #"she/her", "they/them"
   bio              : "Postdoctoral researcher in geophysics & artificial intelligence"
-  location         : "Grenoble, France"
+  location         : "France"
   employer         : "University of Grenoble Alpes"
   uri              : # URL
   email            : "dokhtdor@univ-grenoble-alpes.fr"
+
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?user=UXNmdGsAAAAJ&hl=en"
   orcid            : "https://orcid.org/my-orcid?orcid=0000-0003-3373-9859"
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : "https://www.researchgate.net/profile/Reza-D-D-Esfahani?ev=hdr_xprf"
+
+
   github           : "resfahani"
 
   scopus           : # URL
