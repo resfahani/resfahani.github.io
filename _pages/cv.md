@@ -9,12 +9,11 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+### Education
 ======
 * Ph.D in Geophysics, GFZ and University of Potsdam, Potsdam, Germany, 2022
 * M.S.  in Geophysics, Institute of Geophysics, Tehran, Iran, 2017
 * B.S. in Mining Engineering, Isfahan University of Technology, Isfahan, Iran, 2014
-
 
 ### Work Experience
 ======
@@ -56,21 +55,26 @@ Education
   - Project: *Sparsity Promotion of Phase and Group Velocity Estimation for Surface Wave Dispersion Curves*  
   - Advisor: Dr. Ali Gholami  
 
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+### Awards
+
+- **2025**  
+  **Visiting Research Grant**, Earthquake Research Institute (ERI), The University of Tokyo  
+  *2-month research stay*
+
+- **2024**  
+  **France Embassy Travel Grant**  
+  *For GFZ–ISTerre collaboration meeting*
+
+- **2022**  
+  **Postdoctoral Research Award**, funded by DFG  
+  *6-month research project*
+
+- **2018**  
+  **Travel Grant**, European Association of Geoscientists and Engineers (EAGE)  
+  *Conference in Paris, France*
   
+<!--   
 Talks
 ======
   <ul>{% for post in site.talks reversed %}
@@ -82,7 +86,8 @@ Teaching
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Service and leadership
+   -->
+<!-- Service and 
 ======
 * Currently signed in to 43 different slack teams
+leadership -->
