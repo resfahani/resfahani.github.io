@@ -8,19 +8,19 @@
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
 
-    <p class="archive__item-title" itemprop="headline" style="font-weight: bold; font-size: 1.1em;">
+    <p class="archive__item-title" itemprop="headline" style="font-weight: bold;">
       {{ title }}
     </p>
 
-    <p class="archive__item-links">
+    <p>
       {% if post.paper %}
-        📄 <a href="{{ post.paper }}" target="_blank">Paper</a>
+        <span style="display: inline-block; margin-right: 1em;">📄 <a href="{{ post.paper }}" target="_blank">Paper</a></span>
       {% endif %}
       {% if post.slide %}
-        &nbsp;&nbsp;🎞️ <a href="{{ post.slide }}" target="_blank">Slides</a>
+        <span style="display: inline-block; margin-right: 1em;">🎞️ <a href="{{ post.slide }}" target="_blank">Slides</a></span>
       {% endif %}
       {% if post.code %}
-        &nbsp;&nbsp;💻 <a href="{{ post.code }}" target="_blank">Code</a>
+        <span style="display: inline-block; margin-right: 1em;">💻 <a href="{{ post.code }}" target="_blank">Code</a></span>
       {% endif %}
     </p>
 
