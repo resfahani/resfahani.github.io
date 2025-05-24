@@ -2,7 +2,7 @@
 title: "TFCGAN: Nonstationary ground‐motion simulation in the time–frequency domain using conditional Generative Adversarial Network (CGAN) and phase retrieval methods"
 collection: publications
 category: manuscripts
-permalink: https://doi.org/10.1785/0120220068
+permalink: /publication/2010-10-01-paper-title-number-1
 excerpt: 'Generative model for ground motion simulation.'
 date: 2023
 venue: 'Journal 1'
