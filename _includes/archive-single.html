@@ -1,7 +1,5 @@
 {% include base_path %}
 
-{% assign teaser = post.header.teaser | default: site.teaser %}
-
 {% assign title = post.title %}
 {% if post.id %}
   {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
@@ -9,49 +7,22 @@
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-    {% if include.type == "grid" and teaser %}
-      <div class="archive__item-teaser">
-        <img src="{% if teaser contains '://' %}{{ teaser }}{% else %}{{ teaser | prepend: '/images/' | prepend: base_path }}{% endif %}" alt="">
-      </div>
-    {% endif %}
 
     <h2 class="archive__item-title" itemprop="headline">
       <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
     </h2>
 
-    {% if post.collection == 'teaching' %}
-      <p>{{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}</p>
-    {% elsif post.collection == 'publications' %}
-      <p>Published in <i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}</p>
-    {% elsif post.date %}
-      <p class="page__date">
-        <strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong>
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
-      </p>
-    {% endif %}
-
-    {% if post.excerpt %}
-      <p class="archive__item-excerpt" itemprop="description">
-        {{ post.excerpt | markdownify | strip_html }}
-        {% if site.read_more == 'enabled' %}
-          <strong><a href="{{ base_path }}{{ post.url }}" rel="permalink">Read more</a></strong>
-        {% endif %}
-      </p>
-    {% endif %}
-
-    {% if post.citation %}
-      <p>Recommended citation: {{ post.citation }}</p>
-    {% endif %}
-
-    {% assign links = "" %}
-    {% if post.paper %}{% assign links = links | append: "<a href='" | append: post.paper | append: "'>Download Paper</a>" %}{% endif %}
-    {% if post.slide %}{% if links != "" %}{% assign links = links | append: " | " %}{% endif %}{% assign links = links | append: "<a href='" | append: post.slide | append: "'>Download Slides</a>" %}{% endif %}
-    {% if post.code %}{% if links != "" %}{% assign links = links | append: " | " %}{% endif %}{% assign links = links | append: "<a href='" | append: post.code | append: "'>Download Code</a>" %}{% endif %}
-    {% if post.bibtex %}{% if links != "" %}{% assign links = links | append: " | " %}{% endif %}{% assign links = links | append: "<a href='" | append: post.bibtex | append: "'>Download BibTeX</a>" %}{% endif %}
-    {% if links != "" %}
-      <p>{{ links | raw }}</p>
-    {% endif %}
+    <ul>
+      {% if post.paper %}
+        <li><a href="{{ post.paper }}">Download Paper</a></li>
+      {% endif %}
+      {% if post.slide %}
+        <li><a href="{{ post.slide }}">Download Slides</a></li>
+      {% endif %}
+      {% if post.code %}
+        <li><a href="{{ post.code }}">Download Code</a></li>
+      {% endif %}
+    </ul>
 
   </article>
 </div>
