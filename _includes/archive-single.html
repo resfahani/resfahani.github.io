@@ -8,21 +8,21 @@
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
 
-    <h2 class="archive__item-title" itemprop="headline">
-      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
-    </h2>
+    <p class="archive__item-title" itemprop="headline">
+      {{ post.title }}
+    </p>
 
-    <ul>
+    <p>
       {% if post.paper %}
-        <li><a href="{{ post.paper }}"> Paper</a></li>
+        📄 <a href="{{ post.paper }}" target="_blank">Paper</a>
       {% endif %}
       {% if post.slide %}
-        <li><a href="{{ post.slide }}"> Slides</a></li>
+        🎞️ <a href="{{ post.slide }}" target="_blank">Slides</a>
       {% endif %}
       {% if post.code %}
-        <li><a href="{{ post.code }}"> Code</a></li>
+        💻 <a href="{{ post.code }}" target="_blank">Code</a>
       {% endif %}
-    </ul>
+    </p>
 
   </article>
 </div>
