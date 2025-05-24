@@ -4,6 +4,8 @@ collection: publications
 category: manuscripts
 permalink: /publication/2009-10-01-paper-title-number-1
 venue: 'Journal 1'
+excerpt: 'This paper is about fixing template issue #693.'
+date: 2024-02-17
 slide: 'http://academicpages.github.io/files/slides1.pdf'
 paper: 'http://academicpages.github.io/files/paper1.pdf'
 bibtexurl: 'http://academicpages.github.io/files/bibtex1.bib'
