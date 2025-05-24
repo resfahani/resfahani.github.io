@@ -1,16 +1,19 @@
 {% include base_path %}
 
-{% assign abstract = post.abstract | markdownify | remove: "<p>" | remove: "</p>" %}
+{% assign title = post.title %}
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
 
-    <!-- Abstract (instead of title) -->
-    <p class="archive__item-abstract" itemprop="description" style="margin-bottom: 0.5em;">
-      {{ abstract }}
+    <!-- Title links to the full post (where abstract is shown) -->
+    <p class="archive__item-title" itemprop="headline" style="font-weight: bold; margin-bottom: 0.2em;">
+      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
     </p>
 
-    <!-- Inline links -->
+    <!-- Inline links on next line -->
     <div style="display: flex; flex-wrap: wrap; gap: 1em; align-items: center;">
       {% if post.paper %}
         <span>📄 <a href="{{ post.paper }}" target="_blank">Paper</a></span>
