@@ -8,23 +8,21 @@
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
 
-    <!-- Title links to the full post (where abstract is shown) -->
-    <p class="archive__item-title" itemprop="headline" style="font-weight: bold; margin-bottom: 0.2em;">
-      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+    <p class="archive__item-title" itemprop="headline">
+      {{ post.title }}
     </p>
 
-    <!-- Inline links on next line -->
-    <div style="display: flex; flex-wrap: wrap; gap: 1em; align-items: center;">
+    <p>
       {% if post.paper %}
-        <span>📄 <a href="{{ post.paper }}" target="_blank">Paper</a></span>
+        📄 <a href="{{ post.paper }}" target="_blank">Paper</a>
       {% endif %}
       {% if post.slide %}
-        <span>🎞️ <a href="{{ post.slide }}" target="_blank">Slides</a></span>
+        🎞️ <a href="{{ post.slide }}" target="_blank">Slides</a>
       {% endif %}
       {% if post.code %}
-        <span>💻 <a href="{{ post.code }}" target="_blank">Code</a></span>
+        💻 <a href="{{ post.code }}" target="_blank">Code</a>
       {% endif %}
-    </div>
+    </p>
 
   </article>
 </div>
