@@ -4,7 +4,7 @@ collection: publications
 category: manuscripts
 permalink: /publication/2010-10-01-paper-title-number-1
 excerpt: 'Generative model for ground motion simulation.'
-date: '2023'
+date: 2023-01-01
 venue: 'BSSA'
 slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'http://academicpages.github.io/files/paper1.pdf'
